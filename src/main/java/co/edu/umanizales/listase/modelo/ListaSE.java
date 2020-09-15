@@ -129,7 +129,26 @@ public class ListaSE {
             cabeza = listaTemporal.getCabeza();
         }
     }
-    
-   
-    
+    public void eliminarPerro(short numero ) 
+    {
+        if(cabeza !=null)
+        {
+            if(cabeza.getDato().getNumero()==numero)
+            {
+                cabeza=cabeza.getSiguiente();
+                return;
+            }
+            else
+            {
+                Nodo temp=cabeza;
+                while(temp.getSiguiente()!=null)
+                {
+                    if(temp.getSiguiente().getDato().getNumero()== numero)
+                    {
+                        //el que sig
+                    }
+                }
+            }    
+        }
+    }
 }
